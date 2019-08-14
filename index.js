@@ -4,27 +4,27 @@ alert("Working");
 // Create a GitHubRepository class with properties userName, fileName, descriptionOfRepository, and code. Create a function that prints all properties. Create an object of the class and use the function.
 //
 
-// class GitHubRepo
-// {
-//     constructor(userName, fileName, descOfRepo, code)
-//     {
-//         this.userName = userName;
-//         this.fileName = fileName;
-//         this.descOfRepo = descOfRepo;
-//         this.code = code;
-//        
-//     }
-//     printProps()
-//     {
-//         console.log(this.userName);
-//         console.log(this.fileName );
-//         console.log(this.descOfRepo);
-//         console.log(this.code);
-//     }
-// }
-//
-// let repo = new GitHubRepo("Kandice","Aug_13_Afternoon","Classwork","17025" );
-// repo.printProps();
+class GitHubRepo
+{
+    constructor(userName, fileName, descOfRepo, code)
+    {
+        this.userName = userName;
+        this.fileName = fileName;
+        this.descOfRepo = descOfRepo;
+        this.code = code;
+       
+    }
+    printProps()
+    {
+        console.log(this.userName);
+        console.log(this.fileName );
+        console.log(this.descOfRepo);
+        console.log(this.code);
+    }
+}
+
+let repo = new GitHubRepo("Kandice","Aug_13_Afternoon","Classwork","17025" );
+repo.printProps();
 
 
 // ### Problem 2:
@@ -39,7 +39,7 @@ class Movie
         this.rating = rating;
         this.yearReleased = yearReleased;
     }
-
+// PARTIAL CREDIT : You did not create two methods to update the properties. This should not be hard coded.
     movieChanges()
     {
         console.log(myMovie.rating = "R");
